@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="myscript.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body style="padding: 1rem;">
+    
+    <header>
+        <h1>Spanzuratoarea</h1>
+    </header>
+
+
+    
+    <section id="play-cont">
+        <button onclick="startGame()" id="play" class="btn btn-primary">Play</button>
+        <p id="cuvant"></p>
+
+        <form>
+            <input type="text" id="litera" autocomplete="off"><span title="Scrie o litera in casuta si apasa butonul."><i class="fa fa-question-circle"></i></span>
+        </form>
+        <br>
+        <button onclick="getLetter()" id="button" class="btn btn-primary">Ghiceste</button>
+
+        <!-- <p id="vieti">Vieti ramase: 6</p> -->  
+        <span>Litere incercate: </span><p id="incercate"></p>
+    </section>
+
+    <div id="stickman">
+        <div id="sp1"></div>
+        <div id="sp2"></div>
+        <div id="sp3"></div>
+        <div id="sp4"></div>
+        <div id="head" class="stick"></div>
+        <div id="body" class="stick"></div>
+        <div id="arm1" class="stick"></div>
+        <div id="arm2" class="stick"></div>
+        <div id="leg1" class="stick"></div>
+        <div id="leg2" class="stick"></div>
+    </div>
+
+</body>
+</html>
